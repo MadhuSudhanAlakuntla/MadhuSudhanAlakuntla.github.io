@@ -1,1 +1,1 @@
-<a href="https://github.com/MadhuSudhanAlukuntla.github.io/">Visit my portfolio</a>
+<a href="https://madhusudhanalukuntla.github.io/">Visit my portfolio</a>
