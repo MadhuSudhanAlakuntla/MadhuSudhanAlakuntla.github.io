@@ -37,7 +37,7 @@
           <li><a class="tdn" href="#box4">My Skills</a></li>
           <li><a class="tdn" id="projects" href="#box3">Project</a></li>
           <li><a class="tdn" id="contact" href="#box5">Contact</a></li>
-          <li><a class="tdn" download=""  href="pdf/MADHU_SUDHAN_Resume.pdf">Resume</a></li>
+          <li><a class="tdn"  id="resume-link-1" download=""  href="pdf/MADHU_SUDHAN_Resume.pdf">Resume</a></li>
           
         </ul>
     
@@ -45,8 +45,8 @@
 
 
 
-    <div class="box1" id="box1">
-        <div class="box10">
+    <div class="box1 nav-link home" id="box1">
+        <div class="box10" id="user-detail-name">
             <!-- <span style="--i:1;"><H1>H</H1></span>
             <span style="--i:2;"><h1>i</h1></span>
             <span style="--i:3;"><h1>!</h1></span> -->
@@ -68,20 +68,20 @@
 
         <div class="box11">
 
-            <div class="box111">
+            <div class="box111" id="user-detail-intro">
                 
                 <h2 class="wlcm_note">Welcome to my portfolio!</h2>
                 
                 <h2 class="some_about">I am a passionate <span style="color: #72351C;"> Front End Developer </span>who focus on writing clean and user friendly applications</h2>
                 
                 <div class="btn_div">
-                    <button class="rbtn"><a download="" href="pdf/MADHU_SUDHAN_Resume.pdf">Resume</a></button>
+                    <button id="resume-button-1" class="rbtn"><a  id="resume-link-2" download="" href="pdf/MADHU_SUDHAN_Resume.pdf">Resume</a></button>
                 </div>
             
             </div>
 
             <div class="about-col-1">
-                <img src="image/madhu.jpg" alt="">
+                <img class="home-img" src="image/madhu.jpg" alt="">
             </div>
 
         </div>  
@@ -91,7 +91,7 @@
 
     <div class="box0 reveal" id="box0">
         <div id="about">
-            <div class="container">
+            <div class="container nav-link about">
                 <div class="row">
                     <!-- <div class="about-col-1">
                         <img src="image/madhu.jpg" alt="">
@@ -144,7 +144,7 @@
 
     <div class="box2 reveal" id="box2">
 
-        <div class="box21">
+        <div class="box21 nav-link skills">
             <h1>
                 TECH-STACK
             </h1>
@@ -153,21 +153,21 @@
         <div class="box22">
 
 
-            <div class="tool" style="--i:8;">
+            <div class="tool skills-card" style="--i:8;">
                 <div>
-                    <img src="logo/html_logo.png" alt="">
+                    <img class="skills-card-img" src="logo/html_logo.png" alt="">
                 </div>
-                <div>
+                <div class="skills-card-name">
                     HTML5
                 </div>
             </div>
 
 
-            <div class="tool" style="--i:9;">
+            <div class="tool skills-card" style="--i:9;">
                 <div>
-                    <img src="logo/css_logo.webp" alt="">
+                    <img class="skills-card-img" src="logo/css_logo.webp" alt="">
                 </div>
-                <div>
+                <div class="skills-card-name">
                     CSS3
                 </div>
             </div>
@@ -175,45 +175,45 @@
 
             <div class="tool" style="--i:10;">
                 <div>
-                    <img src="logo/js_logo2.jpg" alt="">
+                    <img class="skills-card-img" src="logo/js_logo2.jpg" alt="">
                 </div>
-                <div>
+                <div class="skills-card-name">
                     Java Script
                 </div>
             </div>
-            <div class="tool" style="--i:10;">
+            <div class="tool skills-card" style="--i:10;">
                 <div>
-                    <img src="logo/react_logo.png" alt="">
+                    <img class="skills-card-img" src="logo/react_logo.png" alt="">
                 </div>
-                <div>
+                <div class="skills-card-name">
                     React
                 </div>
             </div>
             
-            <div class="tool" style="--i:10;">
+            <div class="tool skills-card" style="--i:10;">
                 <div>
-                    <img src="logo/redux_log.svg" alt="">
+                    <img class="skills-card-img" src="logo/redux_log.svg" alt="">
                 </div>
-                <div>
+                <div class="skills-card-name">
                     Redux
                 </div>
             </div>
 
 
-            <div class="tool" style="--i:7;"> 
+            <div class="tool skills-card" style="--i:7;"> 
                 <div>
-                    <img src="logo/Git_logo.png" alt="">
+                    <img class="skills-card-img" src="logo/Git_logo.png" alt="">
                 </div>
-                <div>
+                <div class="skills-card-name">
                     Git
                 </div>
             </div>
 
-            <div class="tool" style="--i:1;">
+            <div class="tool skills-card" style="--i:1;">
                 <div>
-                    <img src="logo/java_logo.png" alt="">
+                    <img class="skills-card-img" src="logo/java_logo.png" alt="">
                 </div>
-                <div>
+                <div class="skills-card-name">
                     JAVA
                 </div>
             </div>
@@ -262,60 +262,79 @@
 
     <div class="box3 reveal" id="box3">
 
-        <div class="box31">
+        <div class="box31 nav-link projects">
             <h1>PROJECTS</h1>
         </div>
         <div class="box32">
-            <div class="flip-card">
+            <div class="flip-card project-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <figure class="swing"><img class="proimg" src="image/green_paradise.png" alt=""></figure> 
                     </div>
                     <div class="flip-card-back">
-                        <h1>Green Paradise</h1>
-                        <p>Green Paradise is a fully functional e-commerce website designed for plant enthusiasts.</p>
-                        <p>Tech stack :- HTML | CSS | JavaScript | Firebase | Rozorpay</p>
+                        <h1 class="project-title">Green Paradise</h1>
+                        <p class="project-description">Green Paradise is a fully functional e-commerce website designed for plant enthusiasts.</p>
+                        <p class="project-tech-stack">Tech stack :- HTML | CSS | JavaScript | Firebase | Rozorpay</p>
                         <div class="icons">
-                            <a href="https://github.com/MadhuSudhanAlakuntla/Green-Paradise"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://geenparadise.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                            <a class="project-github-link" href="https://github.com/MadhuSudhanAlakuntla/Green-Paradise"><i class="fa-brands fa-github"></i></a>
+                            <a class="project-deployed-link" href="https://geenparadise.netlify.app/"><i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
                 </div>
                 
             </div>
-            <div class="flip-card">
+            <div class="flip-card project-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <figure class="swing"><img class="proimg" src="image/nyka.png" alt=""></figure> 
                     </div>
                     <div class="flip-card-back">
-                        <h1>Nyka</h1>
-                        <p>Premier online beauty and wellness destination.
+                        <h1 class="project-title">Nyka</h1>
+                        <p class="project-description">Premier online beauty and wellness destination.
                             Comprehensive selection of makeup, skincare,
                             haircare, fragrances, and wellness products</p>
-                        <p>Tech stack :- HTML | CSS | JavaScript</p>
+                        <p class="project-tech-stack">Tech stack :- HTML | CSS | JavaScript</p>
                         <div class="icons">
-                            <a href="https://github.com/MadhuSudhanAlakuntla/Nyka"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://nykastore.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                            <a class="project-github-link" href="https://github.com/MadhuSudhanAlakuntla/Nyka"><i class="fa-brands fa-github"></i></a>
+                            <a class="project-deployed-link" href="https://nykastore.netlify.app/"><i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
                 </div>
                 
             </div>
-            <div class="flip-card">
+            <div class="flip-card project-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <figure class="swing"><img class="proimg" src="image/skin_store.png" alt=""></figure> 
                     </div>
                     <div class="flip-card-back">
-                        <h1>Skin Store</h1>
-                        <p>Developed a premium online website for beauty
+                        <h1 class="project-title">Skin Store</h1>
+                        <p class="project-description">Developed a premium online website for beauty
                             products.
                             Skincare, haircare, fragrances, and wellness products</p>
-                        <p>Tech stack :- HTML | CSS | JavaScript</p>
+                        <p class="project-tech-stack">Tech stack :- HTML | CSS | JavaScript</p>
                         <div class="icons">
-                            <a href="https://github.com/Jageshwar2000/SkinStore"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://skinstore1.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                            <a class="project-github-link" href="https://github.com/Jageshwar2000/SkinStore"><i class="fa-brands fa-github"></i></a>
+                            <a class="project-deployed-link" href="https://skinstore1.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flip-card project-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure class="swing"><img class="proimg" src="image/skin_store.png" alt=""></figure> 
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="project-title">Skin Store</h1>
+                        <p class="project-description">Developed a premium online website for beauty
+                            products.
+                            Skincare, haircare, fragrances, and wellness products</p>
+                        <p class="project-tech-stack">Tech stack :- HTML | CSS | JavaScript</p>
+                        <div class="icons">
+                            <a class="project-github-link" href="https://github.com/Jageshwar2000/SkinStore"><i class="fa-brands fa-github"></i></a>
+                            <a class="project-deployed-link" href="https://skinstore1.netlify.app/"><i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
                 </div>
@@ -442,7 +461,7 @@
 
 
     <div class="box5 reveal" id="box5">
-        <div class="box51">
+        <div class="box51 nav-link contact">
             <h1>CONTACT</h1>
         </div>
 
@@ -467,10 +486,10 @@
                 </div>
 
                 <div class="box5112">
-                    <div class="ico"><a href="https://github.com/MadhuSudhanAlukuntla"><i class="fa-brands fa-github"></i></a></div>
-                    <div class="ico"><a href="https://www.linkedin.com/in/madhu-sudhan-794a91283/"><i class="fa-brands fa-linkedin"></i></a></div>
-                    <div class="ico"><a href="mailto:madhusudhan03833@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
-                    <div class="ico"><a href="tel:+919347998178"><i class="fa-solid fa-phone"></i></a></div>
+                    <div class="ico" id="contact-github"><a href="https://github.com/MadhuSudhanAlukuntla"><i class="fa-brands fa-github"></i></a></div>
+                    <div class="ico" id="contact-linkedin"><a href="https://www.linkedin.com/in/madhu-sudhan-794a91283/"><i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class="ico" id="contact-email"><a href="mailto:madhusudhan03833@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
+                    <div class="ico" id="contact-phone"><a href="tel:+919347998178"><i class="fa-solid fa-phone"></i></a></div>
                     <div class="ico"><a href="https://www.instagram.com/_madhusudhan_01/"><i class="fa-brands fa-square-instagram"></i></a></div>
                     <div class="ico"><a href="https://wa.me/919347998178"><i class="fa-brands fa-whatsapp"></i></a></div>
                 </div>
@@ -483,7 +502,7 @@
             <div class="box512">
                 <img class="img51" src="image/madhu.jpg" alt="">
                 <div class="btn_div">
-                    <button class="rbtn"><a download="" href="pdf/MADHU_SUDHAN_Resume.pdf">Resume</a></button>
+                    <button id="resume-button-1" class="rbtn nav-link resume"><a download="" href="pdf/MADHU_SUDHAN_Resume.pdf">Resume</a></button>
                 </div>
             </div>
 
