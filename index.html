@@ -30,13 +30,13 @@
         <label class='menu-button-container' for="menu-toggle">
             <div class='menu-button'></div>
         </label>
-        <ul class="menu">
-          <li><a class="tdn" href="#box1">Home</a></li>
-          <li><a class="tdn" href="#box0">About</a></li>
-          <li><a class="tdn" href="#box2">Tech Stack</a></li>
+        <ul class="menu" id="nav-menu">
+          <li><a class="tdn" id="home" href="#box1">Home</a></li>
+          <li><a class="tdn about section" id="about" href="#box0">About</a></li>
+          <li><a class="tdn" id="skills" href="#box2">Tech Stack</a></li>
           <li><a class="tdn" href="#box4">My Skills</a></li>
-          <li><a class="tdn" href="#box3">Project</a></li>
-          <li><a class="tdn" href="#box5">Contact</a></li>
+          <li><a class="tdn" id="projects" href="#box3">Project</a></li>
+          <li><a class="tdn" id="contact" href="#box5">Contact</a></li>
           <li><a class="tdn" download=""  href="pdf/MADHU_SUDHAN_Resume.pdf">Resume</a></li>
           
         </ul>
@@ -126,8 +126,7 @@
                             <ul class="aboutSkill">
                                 <li><span>Full Stack Web Development</span><span class="co"><br>Masai School, Bengaluru<br>jan 2023 - Present</span></li>
                                 <li><span>B.COM(Computer Applications)</span><span class="co"><br>Sri Venkateswara University - Tirupati<br> Jul 2020- Aug 2023</span></li>
-                                <!-- <li><span>Diploma in Elementary Education</span><span class="co"><br>Rajasthan Education Department Bikaner<br> Jul 2014 - Oct 2016</span></li> -->
-                            </ul>
+                           </ul>
                         </div>
                     </div>
                 </div>
@@ -201,8 +200,7 @@
             </div>
 
 
-            <!-- I can remove margin-left -->
-            <div class="tool" style="--i:7; margin-left: 285px;"> 
+            <div class="tool" style="--i:7;"> 
                 <div>
                     <img src="logo/Git_logo.png" alt="">
                 </div>
@@ -211,8 +209,7 @@
                 </div>
             </div>
 
-            <!-- I can remove margin-right -->
-            <div class="tool" style="--i:1; margin-right: 285px;">
+            <div class="tool" style="--i:1;">
                 <div>
                     <img src="logo/java_logo.png" alt="">
                 </div>
@@ -516,6 +513,6 @@
 </html>
 <script src="script.js"></script>
 <script>
-    GitHubCalendar(".calendar", "dineshjangid03");
-    GitHubCalendar(".calendar", "dineshjangid03", { responsive: true });
+    GitHubCalendar(".calendar", "MadhuSudhanAlukuntla");
+    GitHubCalendar(".calendar", "MadhuSudhanAlukuntla", { responsive: true });
 </script>

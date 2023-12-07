@@ -216,7 +216,8 @@
     .box11{
         display: flex;
         margin-top: 50px;
-        margin-left: 100px;
+        /* margin-left: 5%; */
+        justify-content: space-around;
     }
 
     .box111{
@@ -870,7 +871,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 20px;
+            /* margin-top: 20px; */
         }
         .box111{
             width: 110%;
