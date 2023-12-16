@@ -31,7 +31,6 @@ function HomeSection() {
                     <h1 id="user-detail-name">Madhu Sudhan</h1>
                     {/* <h3>I am a Full Stack Web Developer</h3> */}
                     <h3>
-                        I am a
                         <span>
                             <Typewriter
                                 options={{
@@ -42,7 +41,12 @@ function HomeSection() {
                             />
                         </span>
                     </h3>
-                    <p> A motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things. You can reach me at <a href="#contact" className='contactMe'>Contact Me</a></p>
+                    <p> Versatile Full Stack Web Developer, proficient in
+                        JavaScript and MERN stack. Collaborative problem-solver
+                        with expertise in translating project requirements into
+                        scalable web applications. Skilled in Node.js, Express.js,
+                        React.js, and MongoDB. Strong attention to detail and
+                        proactive attitude to enhance overall software excellence. You can reach me at <a href="#contact" className='contactMe'>Contact Me</a></p>
                     <div className='home_button'>
                         <button id="resume-button-2"
                             onClick={downloadHandle}>
