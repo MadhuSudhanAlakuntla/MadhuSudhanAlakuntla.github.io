@@ -1,0 +1,141 @@
+#projects {
+  max-width: 1280px;
+  margin: auto;
+}
+.proCard1 {
+  display: grid;
+  /* border: 1px solid #854ce6; */
+  border-radius: 20px;
+  /* padding: 20px; */
+  margin: 30px;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 15px;
+}
+.proCard2 {
+  display: grid;
+  /* border: 1px solid #854ce6; */
+  border-radius: 20px;
+  /* padding: 20px; */
+  margin: 30px;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 15px;
+}
+
+#projects > h1 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: -15px;
+  padding-bottom: 0;
+  font-size: 2.5em;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.projectImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectDetails {
+  /* border: 1px solid red; */
+  /* padding: 10px; */
+  font-size: 16px;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.project-title {
+  color: rgb(158, 157, 157);
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-tech-stack > span {
+  margin: 10px 0;
+  padding: 3px 15px;
+  background-color: #854ce6;
+  border-radius: 20px;
+  font-size: 0.9em;
+  color: rgb(235, 234, 234);
+  margin-right: 10px;
+}
+.project-description {
+  color: rgb(158, 157, 157);
+  padding: 10px 0;
+}
+.projectButtons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.project-github-link {
+  background-color: rgb(51, 51, 51);
+  color: rgb(235, 235, 235);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.4s;
+  transform: scale(1);
+  cursor: pointer;
+}
+.project-deployed-link {
+  background-color: #854ce6;
+  color: rgb(235, 235, 235);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.4s;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.project-deployed-link:hover {
+  box-shadow: rgba(130, 35, 216, 0.9) 0px 0px 10px 0px;
+  transform: scale(1.05);
+}
+.project-github-link:hover {
+  box-shadow: rgba(53, 52, 53, 0.9) 0px 0px 10px 0px;
+  transform: scale(1.05);
+}
+
+@media screen and (width<1100px) {
+  .projectDetails {
+    font-size: 15px;
+  }
+}
+@media screen and (width<1000px) {
+  .projectDetails {
+    font-size: 13px;
+  }
+}
+@media screen and (width<900px) {
+  .projectDetails {
+    font-size: 12px;
+  }
+}
+@media screen and (width<850px) {
+  .project-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .project-card > .projectDetails {
+    order: 2;
+  }
+  #projects > h1 {
+    font-size: 1.9em;
+  }
+
+  .project-card > img {
+    order: 1;
+  }
+}

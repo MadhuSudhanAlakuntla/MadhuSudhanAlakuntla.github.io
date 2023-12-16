@@ -1,0 +1,84 @@
+#contact {
+  /* border-top: 1px solid #4107a5; */
+  margin-top: 70px;
+  padding: 20px;
+  /* box-shadow: rgba(130, 35, 216, 0.9) 0px 7px 29px 0px; */
+  box-shadow: rgba(130, 35, 216, 0.7) 0px 0px 10px 0px;
+}
+#contact h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+#contact > div {
+  display: grid;
+  max-width: 1280px;
+  /* display: flex; */
+  padding: 30px;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  /* flex-wrap: wrap; */
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.contactCard {
+  /* margin: 15px; */
+  border: 1px solid #854ce6;
+  text-align: center;
+  padding: 25px 0px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  transition: 0.5s;
+  transform: scale(1);
+}
+
+.contactCard:hover {
+  box-shadow: rgba(130, 35, 216, 0.9) 0px 0px 10px 0px;
+  transform: scale(1.05);
+}
+
+.contactCard img {
+  width: 25%;
+}
+.contactCard p,
+.contactCard h5 {
+  color: #b2b1b4;
+}
+
+@media screen and (width<1150px) {
+  .contactCard p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (width<1050px) {
+  #contact > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contactCard p {
+    font-size: 1rem;
+  }
+  .contactCard img {
+    width: 15%;
+  }
+}
+@media screen and (width<620px) {
+  .contactCard p {
+    font-size: 0.9rem;
+  }
+  .contactCard img {
+    width: 15%;
+  }
+  #contact h1 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (width<550px) {
+  #contact > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contactCard img {
+    width: 15%;
+  }
+}

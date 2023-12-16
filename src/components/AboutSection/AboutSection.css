@@ -1,0 +1,82 @@
+#about {
+  padding: 20px;
+  max-width: 1350px;
+  margin: auto;
+  font-size: 16px;
+}
+
+#about h1 {
+  text-align: center;
+  font-size: 2.8em;
+}
+
+#about > p {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  font-size: 1.5em;
+  color: rgb(160, 160, 160);
+}
+.education_card > h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.contactMe {
+  color: #9b6bee;
+  text-decoration: underline;
+}
+.contactMe:hover {
+  text-shadow: 2px 2px rgba(173, 99, 252, 0.6);
+}
+
+b {
+  color: #8e6acc;
+}
+.education_box {
+  border: 1px solid #854ce6;
+  border-radius: 20px;
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+  font-size: 1em;
+}
+
+.education_box h2 {
+  font-weight: 500;
+  font-size: 1.4em;
+  color: #e8e0f5;
+}
+.education_box p {
+  color: #958aa8;
+  font-size: 1em;
+}
+
+@media screen and (width<1150px) {
+  #about {
+    font-size: 13px;
+  }
+  .education_box h2 {
+    font-size: 1.3em;
+  }
+  #about > p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (width<800px) {
+  #about {
+    font-size: 11px;
+  }
+  .education_box h2 {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (width<550px) {
+  .education_box h2 {
+    font-size: 0.9em;
+  }
+}

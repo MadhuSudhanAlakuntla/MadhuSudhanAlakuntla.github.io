@@ -1,0 +1,152 @@
+#skills {
+  max-width: 1280px;
+  margin: auto;
+}
+
+#skill_section {
+  border: 1px solid #854ce6;
+  border-radius: 20px;
+  text-align: center;
+  padding: 25px;
+
+  margin: 30px;
+  margin-top: 0px;
+  font-size: 16px;
+}
+
+.skills-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 16px;
+}
+#skills h1 {
+  text-align: center;
+  font-size: 2.4em;
+  padding: 15px;
+  font-weight: 500;
+}
+
+.skill_box {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #854ce6;
+  height: 70px;
+  padding: 20px;
+  transition: 0.5s;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.skill_box:hover {
+  box-shadow: rgba(130, 35, 216, 0.9) 0px 7px 29px 0px;
+  transform: scale(1.05);
+}
+
+.skill_box:hover {
+  box-shadow: rgba(130, 35, 216, 0.9) 0px 0px 10px 0px;
+  transform: scale(1.05);
+}
+
+.skill_box img {
+  width: 60px;
+  padding-right: 20px;
+}
+.skill_box span {
+  font-size: 1.4em;
+}
+
+.githubConatiner {
+  border: 1px solid #854ce6;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 30px;
+  margin-top: 0;
+}
+
+.githubConatiner > div:first-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.githubConatiner > div:nth-child(2) {
+  width: 70%;
+  margin: auto;
+}
+
+#skill_section {
+  color: #854ce6;
+}
+#skill_section h2 {
+  color: #c7c6c9;
+  font-weight: 500;
+  font-size: 22px;
+}
+@media screen and (width<1150px) {
+  #skill_section {
+    font-size: 15px;
+    color: #854ce6;
+  }
+  .skill_box span {
+    font-size: 1.1em;
+  }
+  #skills h1 {
+    font-size: 2em;
+  }
+  .skills-card {
+    width: 100%;
+  }
+}
+
+@media screen and (width<850px) {
+  #skill_section {
+    font-size: 14px;
+  }
+  .skill_box img {
+    width: 50px;
+  }
+  #skills h1 {
+    font-size: 1.8em;
+  }
+  .skill_box span {
+    font-size: 1em;
+  }
+  .githubConatiner > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .githubConatiner > div:nth-child(2) {
+    width: 100%;
+  }
+}
+
+@media screen and (width<550px) {
+  #skill_section {
+    font-size: 12px;
+  }
+  .skill_box img {
+    width: 40px;
+  }
+  #skills h1 {
+    font-size: 1.7em;
+  }
+  .skill_box span {
+    font-size: 0.9em;
+  }
+
+  .skill_box {
+    max-width: 300px;
+    font-size: 15px;
+    height: 50px;
+    padding: 10px;
+  }
+}
