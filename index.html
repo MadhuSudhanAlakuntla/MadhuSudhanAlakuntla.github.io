@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madhu's Portfolio</title>
+    <title>Madhu Sudhan's Portfolio</title>
     <link rel="icon" href="image/madhu.jpg">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6f3f4b23f1.js" crossorigin="anonymous"></script>
@@ -30,21 +30,22 @@
             <div class='menu-button'></div>
         </label>
         <ul class="menu" id="nav-menu">
-          <li><a class="tdn" id="home" href="#box1">Home</a></li>
-          <li><a class="tdn about section" id="about" href="#box0">About</a></li>
-          <li><a class="tdn" id="skills" href="#box2">Tech Stack</a></li>
+          <li><a class="tdn nav-link home" href="#home">Home</a></li>
+          <li><a class="tdn nav-link about" href="#about">About</a></li>
+          <li><a class="tdn nav-link skills" href="#skills">Tech Stack</a></li>
           <li><a class="tdn" href="#box4">My Skills</a></li>
-          <li><a class="tdn" id="projects" href="#box3">Project</a></li>
-          <li><a class="tdn" id="contact" href="#box5">Contact</a></li>
-          <li><a class="tdn"  id="resume-button-1" download target="_blank" href="MADHU_SUDHAN_Resume.pdf" onclick="setTimeout(function(){ window.open('https://drive.google.com/file/d/1UEHlg3iJlbGkE2YR4n4AxbCu4Si-l6el/view?usp=sharing'); }, 100);">Resume</a></li>
+          <li><a class="tdn nav-link projects" href="#projects">Project</a></li>
+          <li><a class="tdn nav-link contact" href="#contact">Contact</a></li>
+          <li><a class="tdn nav-link resume" id="resume-button-1" download target="_blank" href="MADHU_SUDHAN_Resume.pdf" onclick="setTimeout(function(){ window.open('https://drive.google.com/file/d/1UEHlg3iJlbGkE2YR4n4AxbCu4Si-l6el/view?usp=sharing'); }, 100);">Resume</a></li>
+          <li><a class="tdn nav-link github" target="_blank" href="https://github.com/MadhuSudhanAlukuntla" onclick="setTimeout(function(){ window.open('https://drive.google.com/file/d/1UEHlg3iJlbGkE2YR4n4AxbCu4Si-l6el/view?usp=sharing'); }, 100);">Github</a></li>
           
         </ul>
     
     </section>
 
 
-
-    <div class="box1 nav-link home" id="box1">
+<div id="home">
+    <div class="box1" id="box1">
 
         <div class="box11">
 
@@ -58,7 +59,7 @@
                     A passionate <span  id="user-detail-intro" style="color: #72351C;"> Full Stack Web Developer </span>who focus on writing clean and user friendly applications</h2>
                 
                 <div class="btn_div">
-                    <button class="rbtn"><a  id="resume-link-2" download="" href="pdf/MADHU_SUDHAN_Resume.pdf">Resume</a></button>
+                    <button class="rbtn"><a  id="resume-button-2" target="_blank" download="" href="MADHU_SUDHAN_Resume.pdf" onclick="setTimeout(function(){ window.open('https://drive.google.com/file/d/1UEHlg3iJlbGkE2YR4n4AxbCu4Si-l6el/view?usp=sharing'); }, 100);">Resume</a></button>
                 </div>
             
             </div>
@@ -69,11 +70,12 @@
 
         </div>  
     </div>
+</div>
 
 
-
-    <div class="box0 reveal nav-link about" id="box0">
-        <div id="about">
+<div id="about" class="about section">
+    <div class="box0 reveal" id="box0">
+        
             <div class="container">
                 <div class="row">
                     <!-- <div class="about-col-1">
@@ -83,7 +85,7 @@
                         <img src="image/coder.svg" alt="">
                     </div>
                     <div class="about-col-2">
-                        <p>Full Stack Web Developer with the ability to learn and collaborate in Rapidly changing environments and compositions. Worked intensively through 1200+ hours of Bootcamp Structure learning of  HTML5, CSS3, JavaScript, React, Redux, Java, Node, Express, & MongoDB.</p>
+                        <p id="user-detail-intro">Full Stack Web Developer with the ability to learn and collaborate in Rapidly changing environments and compositions. Worked intensively through 1200+ hours of Bootcamp Structure learning of  HTML5, CSS3, JavaScript, React, Redux, Java, Node, Express, & MongoDB.</p>
                         <div class="tab-title">
                             <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
                             <p class="tab-links " onclick="opentab('soft skills')">Soft Skills</p>
@@ -114,7 +116,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
 
 
 
@@ -122,9 +124,10 @@
 
 
     </div>
+</div>
       
 
-
+<div id="skills">
     <div class="box2 reveal" id="box2">
 
         <div class="box21">
@@ -133,7 +136,7 @@
             </h1>
         </div>
 
-        <div class="box22 nav-link skills">
+        <div class="box22">
 
 
             <div class="tool skills-card" style="--i:8;">
@@ -234,7 +237,7 @@
         
     </div>
       
-
+</div>
 
     <div class="box4 reveal" id="box4">
 
@@ -269,8 +272,8 @@
     </div>
 
 
-
-    <div class="box3 reveal nav-link projects" id="box3">
+<div id="projects">
+    <div class="box3 reveal" id="box3">
 
         <div class="box31">
             <h1>PROJECTS</h1>
@@ -354,16 +357,36 @@
                 
             </div>
 
+            <div class="flip-card project-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure class="swing"><img class="proimg" src="image/green_paradise.png" alt=""></figure> 
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="project-title">Green Paradise</h1>
+                        <p class="project-tech-stack">Tech stack :- HTML | CSS | JavaScript | Firebase | Rozorpay</p>
+                        <p class="project-description">Green Paradise is a fully functional e-commerce website designed for plant enthusiasts.</p>
+                        
+                        <div class="icons">
+                            <a class="project-github-link" href="https://github.com/MadhuSudhanAlakuntla/Green-Paradise"><i class="fa-brands fa-github"></i></a>
+                            <a class="project-deployed-link" href="https://geenparadise.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
 
         </div>
 
 
     </div>
+</div>
     <div class="box8 reveal">
         <div class="calendar react-activity-calendar">
 
             <!-- this is the div where your calander will apear -->
-            <img id="github-streak-stats" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=madhusudhanalukuntla&amp;theme=shades_of_purple" alt="GitHub Streak">
+            <!-- <img id="github-streak-stats" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=madhusudhanalukuntla&amp;theme=shades_of_purple" alt="GitHub Streak"> -->
         
         </div>
         <div class="github_stat">
@@ -486,8 +509,8 @@
     </div> 
     
 
-
-    <div class="box5 reveal nav-link contact" id="box5">
+<div id="contact">
+    <div class="box5 reveal" id="box5">
         <div class="box51">
             <h1>CONTACT</h1>
         </div>
@@ -513,12 +536,12 @@
                 </div>
 
                 <div class="box5112">
-                    <div class="ico" id="contact-github"><a href="https://github.com/MadhuSudhanAlukuntla"><i class="fa-brands fa-github"></i></a></div>
-                    <div class="ico" id="contact-linkedin"><a href="https://www.linkedin.com/in/madhu-sudhan-794a91283/"><i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class="ico" id="contact-github"><a href="https://github.com/MadhuSudhanAlukuntla" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                    <div class="ico" id="contact-linkedin"><a href="https://www.linkedin.com/in/madhu-sudhan-794a91283/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
                     <div class="ico"><a href="mailto:madhusudhan03833@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
                     <div class="ico"><a href="tel:+919347998178"><i class="fa-solid fa-phone"></i></a></div>
-                    <div class="ico"><a href="https://www.instagram.com/_madhusudhan_01/"><i class="fa-brands fa-square-instagram"></i></a></div>
-                    <div class="ico"><a href="https://wa.me/919347998178"><i class="fa-brands fa-whatsapp"></i></a></div>
+                    <div class="ico"><a href="https://www.instagram.com/_madhusudhan_01/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></div>
+                    <div class="ico"><a href="https://wa.me/919347998178" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
                 </div>
 
                 
@@ -529,7 +552,7 @@
             <div class="box512">
                 <img class="img51" src="image/madhu.jpg" alt="">
                 <div class="btn_div">
-                    <button id="resume-button-2" class="rbtn nav-link resume"><a download="" href="MADHU_SUDHAN_Resume.pdf">Resume</a></button>
+                    <button class="rbtn"><a target="_blank" download="" href="MADHU_SUDHAN_Resume.pdf" onclick="setTimeout(function(){ window.open('https://drive.google.com/file/d/1UEHlg3iJlbGkE2YR4n4AxbCu4Si-l6el/view?usp=sharing'); }, 100);">Resume</a></button>
                 </div>
             </div>
 
@@ -539,7 +562,7 @@
 
     </div>
 
-
+</div>
 
     <div class="box6" id="box6">
         <p>Built From Scratch With <i class="fa-sharp fa-solid fa-heart"></i> by Madhu Sudhan</p>
