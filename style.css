@@ -13,7 +13,6 @@
     src: url('./font/Cyborg.ttf');  
 }
 
-
     * {
         
         /* cursor: url(arrow/gray24.png),auto; */
@@ -21,6 +20,20 @@
         margin: 0;
         box-sizing: border-box; 
         font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    /* Prevent cursor from causing layout issues */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    /* Main content container */
+    #main-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
     }
 
     html {
@@ -57,6 +70,12 @@
         font-weight: bold;
     }
 
+.box0, .box1, .box2, .box3, .box4, .box5, .box6 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; /* Ensures they are aligned properly */
+    overflow-x: hidden;
+}
 
 /* ========smooth scroll up========== */
     .reveal{
@@ -135,12 +154,12 @@
         margin-right: 50px;
         font-size: 20px;
         font-weight: 500;
-        cursor: url(arrow/h30.png),auto;
+        cursor: url(arrow/h30.png) 2 2, pointer;
         position: relative;
     }
     .tab-links:hover{
         color: #72351C;
-        cursor: url(arrow/h30.png),auto;
+        cursor: url(arrow/h30.png) 2 2, pointer;
     }
     .tab-links::after{
         content: '';
@@ -273,7 +292,7 @@
     }
 
     .rbtn:hover, .rbtn>a:hover{
-        cursor: url(arrow/h30.png),auto;
+        cursor: url(arrow/h30.png) 2 2, pointer;
     }
     .rbtn>a{
         text-decoration: none;
@@ -597,7 +616,8 @@
     .box7{
         color: #001C55;
         padding: 20px 40px;
-        width: 700px;
+        width: 100%;
+        max-width: 700px;
         margin: auto;
         text-align: center;
         display: grid;
@@ -763,6 +783,32 @@
 
 /* =============media query============= */
 
+    /* Disable custom cursor on touch devices and mobile */
+    @media (hover: none) and (pointer: coarse) {
+        .tab-links,
+        .tab-links:hover,
+        .rbtn:hover,
+        .rbtn>a:hover,
+        .tdn:hover,
+        a:hover,
+        .menu-button-container {
+            cursor: pointer !important;
+        }
+    }
+
+    /* Additional fix for devices that don't support custom cursors well */
+    @media (max-width: 768px) {
+        .tab-links,
+        .tab-links:hover,
+        .rbtn:hover,
+        .rbtn>a:hover,
+        .tdn:hover,
+        a:hover,
+        .menu-button-container {
+            cursor: pointer !important;
+        }
+    }
+
     @media screen and (min-width: 200px) and (max-width: 400px){
         .box10>span{
             font-size: 15px;
@@ -801,7 +847,8 @@
             grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
         }
         .flip-card{
-            width: 350px;
+            width: 100%;
+            max-width: 350px;
         }
 
         .box01>h1, .box21>h1, .box31>h1, .box41>h1{
@@ -828,10 +875,12 @@
         .box8>.calendar>.contrib-column{
             display: none;
         }
-        *{
+        /* *{
+            margin: auto;
+        } */
+        .box0, .box1, .box2, .box3, .box4, .box5, .box6 {
             margin: auto;
         }
-
     }
 
     @media screen and (min-width: 400px) and (max-width: 520px) { 
@@ -947,7 +996,7 @@
     }
     .about-col-2{
         font-size: 14px;
-    }
+    } 
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
@@ -964,7 +1013,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #E0E0E0;
     color: #001C55;
     padding: 1em;
@@ -987,13 +1036,14 @@
     }
 
     .menu-button-container {
-    display: none;
-    width: 30px;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
+     display: none;
+     width: 30px;
+     cursor: url(arrow/h30.png) 2 2, pointer;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     }
 
     #menu-toggle {
     display: none;
@@ -1044,25 +1094,41 @@
     font-weight: bold;
     }
     .tdn,a:hover{
-        cursor: pointer;
+        cursor: url(arrow/h30.png) 2 2, pointer;
     }
 
 
 /* -----------------------------------media query for nav bar--------------------------------- */
 /* -----------------------------------media query for nav bar--------------------------------- */
 @media (max-width: 878px) {
+  .top-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    #main-content{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
   .menu-button-container {
     display: flex;
+    position: absolute;
+    /* left: 100%; */
+    transform: translateX(-50%);
+    margin: 0;
   }
   .menu {
     position: absolute;
-    top: 0;
-    margin-top: 50px;
+    top: 50px;
     left: 0;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
+    background: #fff;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -1086,4 +1152,3 @@
     background-color: #fff;
   }
 }
-
